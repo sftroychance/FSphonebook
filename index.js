@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(express.static('dist'))
 
 // discarded solution: adds an extra hyphen at end of log line
 // morgan.token('body', (req) => {
